@@ -1,0 +1,12 @@
+.container-fluid{
+    width: 100%;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    @include desde(lg){
+        max-width: 1200px;
+    }
+}
+
+
