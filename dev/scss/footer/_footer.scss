@@ -70,7 +70,7 @@ footer{
         }
     }
     &__box-link{
-        color: white;
+        color: $gray-100;
         font-size: 14px;
         & .icon{
             font-size: 22px;
@@ -78,8 +78,9 @@ footer{
         }
         & .bold{
             font-family: $NovaBold;
+            color: white;
             @include desde(md){
-                margin-right: 10px;
+                margin-right: 5px;
             }
         }
          @include desde(xs){
@@ -145,10 +146,11 @@ footer{
     &__title{
         font-size: 13px;
         font-family: $NovaSemi;
-        color: white;
+        color: $gray-200;
         text-transform: uppercase;
         @include desde(lg){
             font-size: 15px;
+            letter-spacing: 0.85px;
         }
     }
     &__list{
@@ -159,9 +161,10 @@ footer{
     }
     &__link{
         font-size: 12px;
-        color: white;
+        color: $gray-200;
         @include desde(lg){
             font-size: 14px;
+            letter-spacing: 0.83px;
         }
     }
     &__social{
@@ -203,20 +206,22 @@ footer{
     }
     &__copy{
         text-align: center;
-        color: white;
+        color: $gray-300;
         font-size: 11px;
+        font-family: $NovaSemi;
         @include desde(sm){
             margin: 0;
         }
     }
     &__desing-link{
-        color: white;
+        color: $gray-300;
         font-size: 11px;
+        font-family: $NovaSemi;
     }
     &__desing{
         margin: 5px;
         span{
-            color: lighten(red, 20);
+            //color: lighten(red, 20);
         }
         @include desde(sm){
             margin: 0;

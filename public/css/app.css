@@ -767,16 +767,17 @@ footer {
       .footer__box-contactanos:nth-child(2) {
         margin-top: 0; } }
   .footer__box-link {
-    color: white;
+    color: #EAEAEA;
     font-size: 14px; }
     .footer__box-link .icon {
       font-size: 22px;
       color: #FFC300; }
     .footer__box-link .bold {
-      font-family: "Novabold"; }
+      font-family: "Novabold";
+      color: white; }
       @media screen and (min-width: 990px) {
         .footer__box-link .bold {
-          margin-right: 10px; } }
+          margin-right: 5px; } }
     @media screen and (min-width: 480px) {
       .footer__box-link {
         font-size: 12px;
@@ -854,17 +855,19 @@ footer {
   .footer__title {
     font-size: 13px;
     font-family: "NovaSemibold";
-    color: white;
+    color: #E5E5E5;
     text-transform: uppercase; }
     @media screen and (min-width: 1201px) {
       .footer__title {
-        font-size: 15px; } }
+        font-size: 15px;
+        letter-spacing: 0.85px; } }
   .footer__link {
     font-size: 12px;
-    color: white; }
+    color: #E5E5E5; }
     @media screen and (min-width: 1201px) {
       .footer__link {
-        font-size: 14px; } }
+        font-size: 14px;
+        letter-spacing: 0.83px; } }
   .footer__social {
     margin-top: 20px;
     display: -webkit-box;
@@ -912,18 +915,18 @@ footer {
         margin-right: 100px; } }
   .footer__copy {
     text-align: center;
-    color: white;
-    font-size: 11px; }
+    color: #9EA1A2;
+    font-size: 11px;
+    font-family: "NovaSemibold"; }
     @media screen and (min-width: 721px) {
       .footer__copy {
         margin: 0; } }
   .footer__desing-link {
-    color: white;
-    font-size: 11px; }
+    color: #9EA1A2;
+    font-size: 11px;
+    font-family: "NovaSemibold"; }
   .footer__desing {
     margin: 5px; }
-    .footer__desing span {
-      color: #ff6666; }
     @media screen and (min-width: 721px) {
       .footer__desing {
         margin: 0; } }
