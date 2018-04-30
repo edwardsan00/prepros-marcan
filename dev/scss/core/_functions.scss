@@ -5,7 +5,7 @@
 }
 
 @function img($url){
-    @return url("./assets/img/ + #{$url}");
+    @return url("assets/img/#{$url}");
 }
 
 @function em($child, $parent:16px){
