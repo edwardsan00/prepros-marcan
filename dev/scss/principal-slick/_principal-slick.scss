@@ -34,11 +34,25 @@
     }
     &__list{
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         flex-wrap: nowrap;
+        width: 290px;
+        margin: 0 auto;
+        overflow: hidden;
+        padding-left: 5px;
+        padding-bottom: 5px;
+        @include desde(sm){
+            width: 580px;
+        }
+        @include desde(md){
+            width: 870px;
+        }
+        @include desde(lg){
+            width: 100%;
+        }
     }
     &__item{
-        flex: 100% 1 0;
+        flex: 280px 0 0;
         height: 500px;
         display: flex;
         flex-direction: column;
