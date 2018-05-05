@@ -2,6 +2,7 @@ header{
     background-color: $yellow;
     height: 70px;
     position: fixed;
+    z-index: 1000;
 }
 .header{
     display: flex;
@@ -37,21 +38,22 @@ header{
         }
     }
     &__menu-desktop{
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         position: absolute;
         width: 100%;
-        left: -100%;
+        left: 0;
         top:70px;
         margin: 0;
         transition: all ease-in-out .15s;
         &.active{
-            left: 0;
+            display: flex;
             transition: all ease-in-out .15s;
         }
         @include desde(sm){
+            display: flex;
             position: relative;
             flex-direction: row;
             top: 0;
@@ -65,7 +67,7 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba($yellow, .8);
+        background-color: rgba($yellow, .9);
         border-bottom: solid 1px $gray;
         &:nth-child(1){
             border-top: solid 1px $gray;

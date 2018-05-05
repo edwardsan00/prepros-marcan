@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,626 @@
     <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css" />
     <link rel="shortcut icon" type="image/png" href="assets/favicon/256.png" />
     <link rel="stylesheet" href="css/app.css">
-    
+
     <title>Marcan</title>
 </head>
+
 <body>
+    <header class="container-fluid">
+        <div class="header container">
+            <div class="header__logo">
+                <a href="#"><img src="assets/img/logo-header.png" class="header__img" alt="Marcan"></a>
+            </div>
+            <div class="header__menu">
+                <div class="header__menu-movil" id="menu-movil">
+                    <span class="icon-plus"></span>
+                </div>
+                <ul class="header__menu-desktop">
+                    <li class="header__item">
+                        <a href="viviendas.html" class="header__link">Viviendas</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="oficinas.html" class="header__link">Oficinas</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="contacto.html" class="header__link">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="slide-container container-fluid">
+        <div class="slide slide-1 container-fluid">
+            <div class="slide__top container"></div>
+
+            <div class="slide__center container">
+                <div class="slide__previus">
+                    <span class="icon-izquierda"></span>
+                </div>
+
+                <div class="slide__cont-center">
+                    <h2 class="slide__name">Vive Vichayito</h2>
+                    <h1 class="slide__title">Tu casa de playa</h1>
+                    <div class="slide__btn">
+                        <a href="#" class="btn-slide">
+                            <p class="text-slide">Ver Proyecto</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slide__next">
+                    <span class="icon-derecha"></span>
+                </div>
+            </div>
+
+            <div class="slide__bottom container">
+                <span class="icon-mouse"></span>
+            </div>
+
+        </div>
+    </section>
+    <div class="view-options-viviendas container-fluid">
+        <section class="view-options container">
+            <div class="view-options__header">
+                <span class="icon-arrow-izquierda izquierda "></span>
+                <h2 class="view-options__title">Viviendas</h2>
+                <span class="icon-arrow-derecha derecha"></span>
+            </div>
+            <div class="view-options__content">
+                <ul class="view-options__list" id="vivienda-slick">
+                    <li class="view-options__item">
+                        <div class="view-options__cont-img">
+                            <div class="view-options__figure-hover">
+                                <img src="assets/img/img-vichayito.png" alt="img" />
+                            </div>
+                            <div class="view-options__condition">
+                                <p class="view-options__condition-text">
+                                    Entrega Inmediata
+                                </p>
+                            </div>
+                        </div>
+                        <div class="view-options__cont-description">
+                            <div class="view-options__info">
+                                <p class="view-options__app">Vive Vichayito</p>
+                                <p class="view-options__ubc">Pueblo Libre</p>
+                            </div>
+                            <div class="view-options__cont-hab">
+                                <ul class="view-options__hab-list">
+                                    <li class="view-options__hab-item">
+                                        <span class="icon-metraje icono"></span>
+                                        <span class="description">Desde 55m<span class="cd2">2</span></span>
+                                    </li>
+                                    <li class="view-options__hab-item">
+                                        <span class="icon-habitaciones icono"></span>
+                                        <span class="description">1, 2 y 3 Dorm</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="view-options__cont-precio">
+                                <p class="view-options__precio-text">Desde: <span class="view-options__precio-bold">S/ 230000</span></p>
+                            </div>
+                            <div class="view-options__cont-btn">
+                                <a href="#" class="btn-gray">
+                                    <p class="btn-gray__text">Ver Más</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="view-options__item">
+                        <div class="view-options__cont-img">
+                            <div class="view-options__figure-hover">
+                                <img src="assets/img/img-vichayito.png" alt="img" />
+                            </div>
+                            <div class="view-options__condition">
+                                <p class="view-options__condition-text">
+                                    Entrega Inmediata
+                                </p>
+                            </div>
+                        </div>
+                        <div class="view-options__cont-description">
+                            <div class="view-options__info">
+                                <p class="view-options__app">Vive Vichayito</p>
+                                <p class="view-options__ubc">Pueblo Libre</p>
+                            </div>
+                            <div class="view-options__cont-hab">
+                                <ul class="view-options__hab-list">
+                                    <li class="view-options__hab-item">
+                                        <span class="icon-metraje icono"></span>
+                                        <span class="description">Desde 55m<span class="cd2">2</span></span>
+                                    </li>
+                                    <li class="view-options__hab-item">
+                                        <span class="icon-habitaciones icono"></span>
+                                        <span class="description">1, 2 y 3 Dorm</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="view-options__cont-precio">
+                                <p class="view-options__precio-text">Desde: <span class="view-options__precio-bold">S/ 230000</span></p>
+                            </div>
+                            <div class="view-options__cont-btn">
+                                <a href="#" class="btn-gray">
+                                    <p class="btn-gray__text">Ver Más</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="view-options__item">
+                        <div class="view-options__cont-img">
+                            <div class="view-options__figure-hover">
+                                <img src="assets/img/img-vichayito.png" alt="img" />
+                            </div>
+                            <div class="view-options__condition">
+                                <p class="view-options__condition-text">
+                                    Entrega Inmediata
+                                </p>
+                            </div>
+                        </div>
+                        <div class="view-options__cont-description">
+                            <div class="view-options__info">
+                                <p class="view-options__app">Vive Vichayito</p>
+                                <p class="view-options__ubc">Pueblo Libre</p>
+                            </div>
+                            <div class="view-options__cont-hab">
+                                <ul class="view-options__hab-list">
+                                    <li class="view-options__hab-item">
+                                        <span class="icon-metraje icono"></span>
+                                        <span class="description">Desde 55m<span class="cd2">2</span></span>
+                                    </li>
+                                    <li class="view-options__hab-item">
+                                        <span class="icon-habitaciones icono"></span>
+                                        <span class="description">1, 2 y 3 Dorm</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="view-options__cont-precio">
+                                <p class="view-options__precio-text">Desde: <span class="view-options__precio-bold">S/ 230000</span></p>
+                            </div>
+                            <div class="view-options__cont-btn">
+                                <a href="#" class="btn-gray">
+                                    <p class="btn-gray__text">Ver Más</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="view-options__item">
+                        <div class="view-options__cont-img">
+                            <div class="view-options__figure-hover">
+                                <img src="assets/img/img-vichayito.png" alt="img" />
+                            </div>
+                            <div class="view-options__condition">
+                                <p class="view-options__condition-text">
+                                    Entrega Inmediata
+                                </p>
+                            </div>
+                        </div>
+                        <div class="view-options__cont-description">
+                            <div class="view-options__info">
+                                <p class="view-options__app">Vive Vichayito</p>
+                                <p class="view-options__ubc">Pueblo Libre</p>
+                            </div>
+                            <div class="view-options__cont-hab">
+                                <ul class="view-options__hab-list">
+                                    <li class="view-options__hab-item">
+                                        <span class="icon-metraje icono"></span>
+                                        <span class="description">Desde 55m<span class="cd2">2</span></span>
+                                    </li>
+                                    <li class="view-options__hab-item">
+                                        <span class="icon-habitaciones icono"></span>
+                                        <span class="description">1, 2 y 3 Dorm</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="view-options__cont-precio">
+                                <p class="view-options__precio-text">Desde: <span class="view-options__precio-bold">S/ 230000</span></p>
+                            </div>
+                            <div class="view-options__cont-btn">
+                                <a href="#" class="btn-gray">
+                                    <p class="btn-gray__text">Ver Más</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="view-options__item">
+                        <div class="view-options__cont-img">
+                            <div class="view-options__figure-hover">
+                                <img src="assets/img/img-vichayito.png" alt="img" />
+                            </div>
+                            <div class="view-options__condition">
+                                <p class="view-options__condition-text">
+                                    Entrega Inmediata
+                                </p>
+                            </div>
+                        </div>
+                        <div class="view-options__cont-description">
+                            <div class="view-options__info">
+                                <p class="view-options__app">Vive Vichayito</p>
+                                <p class="view-options__ubc">Pueblo Libre</p>
+                            </div>
+                            <div class="view-options__cont-hab">
+                                <ul class="view-options__hab-list">
+                                    <li class="view-options__hab-item">
+                                        <span class="icon-metraje icono"></span>
+                                        <span class="description">Desde 55m<span class="cd2">2</span></span>
+                                    </li>
+                                    <li class="view-options__hab-item">
+                                        <span class="icon-habitaciones icono"></span>
+                                        <span class="description">1, 2 y 3 Dorm</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="view-options__cont-precio">
+                                <p class="view-options__precio-text">Desde: <span class="view-options__precio-bold">S/ 230000</span></p>
+                            </div>
+                            <div class="view-options__cont-btn">
+                                <a href="#" class="btn-gray">
+                                    <p class="btn-gray__text">Ver Más</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="view-options-oficinas container-fluid">
+        <section class="view-options container">
+            <div class="view-options__header">
+                <span class="icon-arrow-izquierda izquierda "></span>
+                <h2 class="view-options__title">Oficinas</h2>
+                <span class="icon-arrow-derecha derecha"></span>
+            </div>
+            <div class="view-options__content">
+                <ul class="view-options__list" id="vivienda-slick">
+                    <li class="view-options__item">
+                        <div class="view-options__cont-img">
+                            <div class="view-options__figure-hover">
+                                <img src="assets/img/img-vichayito.png" alt="img" />
+                            </div>
+                            <div class="view-options__condition">
+                                <p class="view-options__condition-text">
+                                    Entrega Inmediata
+                                </p>
+                            </div>
+                        </div>
+                        <div class="view-options__cont-description">
+                            <div class="view-options__info">
+                                <p class="view-options__app">Vive Vichayito</p>
+                                <p class="view-options__ubc">Pueblo Libre</p>
+                            </div>
+                            <div class="view-options__cont-hab">
+                                <ul class="view-options__hab-list">
+                                    <li class="view-options__hab-item">
+                                        <span class="icon-metraje icono"></span>
+                                        <span class="description">Desde 55m<span class="cd2">2</span></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="view-options__cont-precio">
+                                <p class="view-options__precio-text">Desde: <span class="view-options__precio-bold">S/ 230000</span></p>
+                            </div>
+                            <div class="view-options__cont-btn">
+                                <a href="#" class="btn-gray">
+                                    <p class="btn-gray__text">Ver Más</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="view-options__item">
+                        <div class="view-options__cont-img">
+                            <div class="view-options__figure-hover">
+                                <img src="assets/img/img-vichayito.png" alt="img" />
+                            </div>
+                            <div class="view-options__condition">
+                                <p class="view-options__condition-text">
+                                    Entrega Inmediata
+                                </p>
+                            </div>
+                        </div>
+                        <div class="view-options__cont-description">
+                            <div class="view-options__info">
+                                <p class="view-options__app">Vive Vichayito</p>
+                                <p class="view-options__ubc">Pueblo Libre</p>
+                            </div>
+                            <div class="view-options__cont-hab">
+                                <ul class="view-options__hab-list">
+                                    <li class="view-options__hab-item">
+                                        <span class="icon-metraje icono"></span>
+                                        <span class="description">Desde 55m<span class="cd2">2</span></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="view-options__cont-precio">
+                                <p class="view-options__precio-text">Desde: <span class="view-options__precio-bold">S/ 230000</span></p>
+                            </div>
+                            <div class="view-options__cont-btn">
+                                <a href="#" class="btn-gray">
+                                    <p class="btn-gray__text">Ver Más</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="view-options__item">
+                        <div class="view-options__cont-img">
+                            <div class="view-options__figure-hover">
+                                <img src="assets/img/img-vichayito.png" alt="img" />
+                            </div>
+                            <div class="view-options__condition">
+                                <p class="view-options__condition-text">
+                                    Entrega Inmediata
+                                </p>
+                            </div>
+                        </div>
+                        <div class="view-options__cont-description">
+                            <div class="view-options__info">
+                                <p class="view-options__app">Vive Vichayito</p>
+                                <p class="view-options__ubc">Pueblo Libre</p>
+                            </div>
+                            <div class="view-options__cont-hab">
+                                <ul class="view-options__hab-list">
+                                    <li class="view-options__hab-item">
+                                        <span class="icon-metraje icono"></span>
+                                        <span class="description">Desde 55m<span class="cd2">2</span></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="view-options__cont-precio">
+                                <p class="view-options__precio-text">Desde: <span class="view-options__precio-bold">S/ 230000</span></p>
+                            </div>
+                            <div class="view-options__cont-btn">
+                                <a href="#" class="btn-gray">
+                                    <p class="btn-gray__text">Ver Más</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="view-options__item">
+                        <div class="view-options__cont-img">
+                            <div class="view-options__figure-hover">
+                                <img src="assets/img/img-vichayito.png" alt="img" />
+                            </div>
+                            <div class="view-options__condition">
+                                <p class="view-options__condition-text">
+                                    Entrega Inmediata
+                                </p>
+                            </div>
+                        </div>
+                        <div class="view-options__cont-description">
+                            <div class="view-options__info">
+                                <p class="view-options__app">Vive Vichayito</p>
+                                <p class="view-options__ubc">Pueblo Libre</p>
+                            </div>
+                            <div class="view-options__cont-hab">
+                                <ul class="view-options__hab-list">
+                                    <li class="view-options__hab-item">
+                                        <span class="icon-metraje icono"></span>
+                                        <span class="description">Desde 55m<span class="cd2">2</span></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="view-options__cont-precio">
+                                <p class="view-options__precio-text">Desde: <span class="view-options__precio-bold">S/ 230000</span></p>
+                            </div>
+                            <div class="view-options__cont-btn">
+                                <a href="#" class="btn-gray">
+                                    <p class="btn-gray__text">Ver Más</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="view-options__item">
+                        <div class="view-options__cont-img">
+                            <div class="view-options__figure-hover">
+                                <img src="assets/img/img-vichayito.png" alt="img" />
+                            </div>
+                            <div class="view-options__condition">
+                                <p class="view-options__condition-text">
+                                    Entrega Inmediata
+                                </p>
+                            </div>
+                        </div>
+                        <div class="view-options__cont-description">
+                            <div class="view-options__info">
+                                <p class="view-options__app">Vive Vichayito</p>
+                                <p class="view-options__ubc">Pueblo Libre</p>
+                            </div>
+                            <div class="view-options__cont-hab">
+                                <ul class="view-options__hab-list">
+                                    <li class="view-options__hab-item">
+                                        <span class="icon-metraje icono"></span>
+                                        <span class="description">Desde 55m<span class="cd2">2</span></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="view-options__cont-precio">
+                                <p class="view-options__precio-text">Desde: <span class="view-options__precio-bold">S/ 230000</span></p>
+                            </div>
+                            <div class="view-options__cont-btn">
+                                <a href="#" class="btn-gray">
+                                    <p class="btn-gray__text">Ver Más</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <div class="historias-content container-fluid">
+        <div class="historias__outflow"></div>
+        <div class="historias container">
+            <div class="historias__left">
+                <div class="historias__title-content">
+                    <h2 class="historias__title">Historias <br> verdaderas <br>y felices</h2>
+                </div>
+            </div>
+            <div class="historias__right">
+                <div class="historias__blackbg">
+                    <div class="historias__video-principal-cont">
+                        <div class="historias__video-principal">
+                            <span class="icon-play"></span>
+                        </div>
+                        <div class="historias__desc-video">
+                            <p class="historias__familia">Familia Rosas Mendoza</p>
+                            <p class="historias__proyecto">Proyecto Metropolis</p>
+                        </div>
+                    </div>
+                    <ul class="historias__list-video">
+                        <li class="historias__item-video">
+                            <div class="historias__video">
+                                <span class="icon-play"></span>
+                            </div>
+                            <div class="historias__desc-video">
+                                <p class="historias__familia">Familia Rosas Mendoza</p>
+                                <p class="historias__proyecto">Proyecto Metropolis</p>
+                            </div>
+                        </li>
+                        <li class="historias__item-video">
+                            <div class="historias__video">
+                                <span class="icon-play"></span>
+                            </div>
+                            <div class="historias__desc-video">
+                                <p class="historias__familia">Familia Rosas Mendoza</p>
+                                <p class="historias__proyecto">Proyecto Metropolis</p>
+                            </div>
+                        </li>
+                        <li class="historias__item-video">
+                            <div class="historias__video">
+                                <span class="icon-play"></span>
+                            </div>
+                            <div class="historias__desc-video">
+                                <p class="historias__familia">Familia Rosas Mendoza</p>
+                                <p class="historias__proyecto">Proyecto Metropolis</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="mantener-informado-cont container-fluid">
+        <div class="mantener-informado container">
+            <div class="mantener-informado__header">
+                <h1 class="mantener-informado__title">Mantente Informado</h1>
+            </div>
+            <div class="mantener-informado__notice">
+                <ul class="mantener-informado__list">
+                    <li class="mantener-informado__item">
+                        <p class="mantener-informado__fecha">02 de diciembre 2017</p>
+                        <p class="mantener-informado__noticia">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p class="mantener-informado__mas"><a href="#" class="mantener-informado__link">Leer Mas <span class="icon-arrow-derecha"></span></a></p>
+                    </li>
+                    <li class="mantener-informado__item">
+                        <p class="mantener-informado__fecha">02 de diciembre 2017</p>
+                        <p class="mantener-informado__noticia">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p class="mantener-informado__mas"><a href="#" class="mantener-informado__link">Leer Mas <span class="icon-arrow-derecha"></span></a></p>
+                    </li>
+                    <li class="mantener-informado__item">
+                        <p class="mantener-informado__fecha">02 de diciembre 2017</p>
+                        <p class="mantener-informado__noticia">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
+                        <p class="mantener-informado__mas"><a href="#" class="mantener-informado__link">Leer Mas <span class="icon-arrow-derecha"></span></a></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="mantener-informado__blog">
+                <a href="#" class="btn-gray mantener-informado__btn">
+                    <p class="btn-gray__text">Ir a Blog</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid">
+        <div class="footer container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <a href="#"><img src="assets/img/logo-footer.png" class="footer__img" alt="Marcan"></a>
+                </div>
+                <div class="footer__contactanos">
+                    <div class="footer__box-contactanos">
+                        <a href="#ubicacion" class="footer__box-link">
+                            <span class="icon icon-ubicacion"></span>
+                            <span class="bold">Visítanos: </span>
+                            <span class="complement-text">Jorge Chávez, 263 Of.301 Miraflores</span>
+                        </a>
+                    </div>
+                    <div class="footer__box-contactanos">
+                        <a href="#contacto" class="footer__box-link">
+                            <span class=" icon icon-mensaje"></span>
+                            <span class="bold">Escríbenos: </span>
+                            <span class="complement-text">ventas@marcan.com.pe</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__contend">
+                    <div class="footer__box-anchor">
+                        <div class="footer__title-header">
+                            <p class="footer__title">Proyectos</p>
+                        </div>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">Viviendas</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Oficinas</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__box-anchor">
+                        <div class="footer__title-header">
+                            <p class="footer__title">Cónocenos</p>
+                        </div>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">Somos Marcan</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Proyectos entregados</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Trabaja en Marcan</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__box-anchor">
+                        <div class="footer__title-header">
+                            <p class="footer__title">Post Venta</p>
+                        </div>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">Post venta</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">¿Como comprar?</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Comprar terreno</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__box-anchor">
+                        <div class="footer__title-header">
+                            <p class="footer__title">Blog</p>
+                        </div>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">Politicas de privacidad</a></li>
+                            <li class="footer__item">
+                                <ul class="footer__social">
+                                    <li class="footer__social-item"><a href="#" class="footer__social-link"><span class="icon-facebook"></span></a></li>
+                                    <li class="footer__social-item"><a href="#" class="footer__social-link"><span class="icon-instagram"></span></a></li>
+                                    <li class="footer__social-item"><a href="#" class="footer__social-link"><span class="icon-youtube"></span></a></li>
+                                    <li class="footer__social-item"><a href="#" class="footer__social-link"><span class="icon-linkedin"></span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__contend-copy">
+                    <p class="footer__copy">Marcan© Copyright 2018 - Todos los derechos reservados</p>
+                    <a href="#" class="footer__desing-link">
+                        <p class="footer__desing">Diseño web by <span class="icon-ubicacion"></span> <strong>StaffDigital</strong></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -28,4 +645,5 @@
     <script src="js/slick/slick.min.js"></script>
     <script src="js/main-dist.js"></script>
 </body>
+
 </html>

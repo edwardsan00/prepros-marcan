@@ -128,6 +128,9 @@
             @include desde(md){
                 margin-left: 10px;
             }
+            @include desde(lg){
+                margin-top: 50px;
+            }
         }
         .historias__familia{
             margin: 0;
@@ -252,6 +255,7 @@
             }
             @include desde(lg){
                 font-size: 19px;
+                margin-top: 15px;
             }
         }
         .historias__proyecto{
@@ -269,6 +273,7 @@
             }
             @include desde(lg){
                 font-size: 16px;
+                margin-top: 12px;
             }
         }
     }
