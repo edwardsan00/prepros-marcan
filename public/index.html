@@ -634,7 +634,16 @@
 
 
 
-
+    <div class="phone-fixed">
+        <div class="phone-fixed__phone">
+            <a href="tel:998137302" class="phone-fixed__phone-text">Llámanos: 998 137 302</a>
+        </div>
+        <div class="phone-fixed__circle">
+            <span class="icon-call"></span>
+        </div>
+        <div class="gota1"></div>
+        <div class="gota2"></div>
+    </div>
 
 
 
@@ -644,6 +653,22 @@
     <script src="js/scroll/smooth-scroll.min.js"></script>
     <script src="js/slick/slick.min.js"></script>
     <script src="js/main-dist.js"></script>
+    <script>    
+        let heightSlide = $('.view-options').height();
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            
+            console.log(heightSlide);
+            scroll >= heightSlide ? $(".phone-fixed").addClass("active") : $(".phone-fixed").removeClass("active");
+        });
+        $('.phone-fixed__circle').on('mouseenter click', function(){
+            $('.phone-fixed__phone').addClass('active');
+        });
+        $('.phone-fixed').on('mouseleave', function(){
+             $('.phone-fixed__phone').removeClass('active');
+        });
+
+    </script>
 </body>
 
 </html>
