@@ -1115,6 +1115,70 @@ footer {
       right: -20px;
       top: -20px; } }
 
+.banner-page {
+  margin-top: 70px;
+  height: 335px;
+  background-color: #545146;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .banner-page__left {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    @media screen and (min-width: 721px) {
+      .banner-page__left {
+        width: 40%;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end; } }
+  @media screen and (min-width: 721px) {
+    .banner-page__right {
+      width: 60%;
+      height: 335px;
+      background-image: url("../assets/img/compra-nosotros.png");
+      background-position: center;
+      background-size: cover; } }
+  .banner-page__principal-content {
+    width: 80%;
+    margin-left: 20%;
+    height: 170px;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    @media screen and (min-width: 721px) {
+      .banner-page__principal-content {
+        width: 575px; } }
+  .banner-page__title {
+    font-size: 35px;
+    font-family: "Novabold";
+    color: #545146;
+    margin: 0;
+    margin-left: 40px;
+    margin-top: -20px; }
+  .banner-page__description {
+    font-size: 20px;
+    font-family: "NovaLight";
+    color: #545146;
+    margin: 0;
+    margin-left: 40px;
+    margin-top: 5px; }
+
 .slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1980,3 +2044,170 @@ footer {
   .mantener-informado__btn {
     width: 150px;
     height: 50px; }
+
+.valores-container {
+  height: 400px; }
+
+.valores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  @media screen and (min-width: 721px) {
+    .valores {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; } }
+  @media screen and (min-width: 990px) {
+    .valores__content-title {
+      margin-top: 50px; } }
+  .valores__title {
+    font-size: 30px;
+    font-family: "Novabold";
+    color: #545146;
+    text-align: center; }
+    @media screen and (min-width: 721px) {
+      .valores__title {
+        text-align: left;
+        margin: 0; } }
+    @media screen and (min-width: 990px) {
+      .valores__title {
+        width: 170px; } }
+  @media screen and (min-width: 721px) {
+    .valores__content-valores {
+      margin-left: 20px; } }
+  @media screen and (min-width: 990px) {
+    .valores__content-valores {
+      margin-top: 50px; } }
+  @media screen and (min-width: 1201px) {
+    .valores__content-valores {
+      -webkit-box-flex: 1;
+      -ms-flex: auto 1 0px;
+      flex: auto 1 0;
+      margin-left: 80px; } }
+  .valores__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    @media screen and (min-width: 480px) {
+      .valores__list {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row; } }
+    @media screen and (min-width: 990px) {
+      .valores__list {
+        margin: 0; } }
+    @media screen and (min-width: 1201px) {
+      .valores__list {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; } }
+  .valores__item {
+    padding: 1em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 10px; }
+    @media screen and (min-width: 721px) {
+      .valores__item {
+        padding: 0; } }
+    @media screen and (min-width: 1201px) {
+      .valores__item {
+        width: 280px; } }
+  .valores__img {
+    width: 60px;
+    height: auto;
+    margin-left: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .valores__nombre {
+    color: #545146;
+    font-size: 19px;
+    font-family: "Novabold";
+    padding-left: 10px; }
+  .valores__descripcion {
+    color: #545146;
+    font-size: 16px;
+    font-family: "NovaLight";
+    margin: 0;
+    padding: 0 10px;
+    line-height: 1.4; }
+
+.colaboradores-content {
+  height: 285px;
+  background-color: #545146; }
+
+.colaboradores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .colaboradores__left {
+    display: none;
+    width: 33.3%; }
+    @media screen and (min-width: 721px) {
+      .colaboradores__left {
+        display: block;
+        background-image: url("../assets/img/nosotros.png");
+        background-position: center;
+        background-size: cover; } }
+  .colaboradores__center {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 285px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 1em 0 3em; }
+    @media screen and (min-width: 990px) {
+      .colaboradores__center {
+        width: 33.3%; } }
+    @media screen and (min-width: 1201px) {
+      .colaboradores__center {
+        padding: 0 1em 0 6em; } }
+  .colaboradores__right {
+    display: none;
+    width: 33.3%; }
+    @media screen and (min-width: 721px) {
+      .colaboradores__right {
+        display: block;
+        background-image: url("../assets/img/nosotros.png");
+        background-position: center;
+        background-size: cover; } }
+  .colaboradores__cantidad {
+    font-size: 35px;
+    font-family: "NovaLight";
+    margin: 0;
+    color: white;
+    margin-top: -20px; }
+  .colaboradores__accion {
+    margin: 0;
+    font-size: 22px;
+    font-family: "NovaLight";
+    color: #FFC300;
+    margin-top: 15px;
+    line-height: 1.3; }
+    .colaboradores__accion span {
+      color: white; }
