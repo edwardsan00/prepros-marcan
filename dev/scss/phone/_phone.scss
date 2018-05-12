@@ -80,10 +80,10 @@
             font-size: 20px;
         }
         @include desde(xl){
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            height: 60px;
             span{
-                font-size: 35px;
+                font-size: 25px;
             }
         }
     }
@@ -124,10 +124,10 @@
         top: -5px;
     }
     @include desde(xl){
-        width: 100px;
-        height: 100px;
-        right: -10px;
-        top: -10px;
+        width: 70px;
+        height: 70px;
+        right: -5px;
+        top: -5px;
     }
 }
 .gota2{
@@ -135,7 +135,7 @@
     border-radius: 50%;
     width: 65px;
     height: 65px;
-    right: -10px;
+    right: -60px;
     z-index: 3;
     background-color: rgba($yellow,.5);
     animation: gota 1s infinite  ease;
@@ -143,9 +143,9 @@
         top: -10px;
     }
     @include desde(xl){
-        width: 120px;
-        height: 120px;
-        right: -20px;
-        top: -20px;
+        width: 80px;
+        height: 80px;
+        right: -10px;
+        top: -10px;
     }
 }

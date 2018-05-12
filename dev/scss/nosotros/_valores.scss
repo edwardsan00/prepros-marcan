@@ -1,11 +1,15 @@
 .valores-container{
-    height: 400px;
+    
 }
 .valores{
     display: flex;
     flex-direction: column;
     @include desde(sm){
         flex-direction: row;
+    }
+
+    @include desde(md){
+         height: 400px;
     }
     &__content-title{
         @include desde(md){
