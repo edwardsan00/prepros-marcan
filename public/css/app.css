@@ -1104,7 +1104,7 @@ footer {
   border-radius: 50%;
   width: 65px;
   height: 65px;
-  right: -60px;
+  right: -10px;
   z-index: 3;
   background-color: rgba(255, 195, 0, 0.5);
   -webkit-animation: gota 1s infinite  ease;
@@ -1147,9 +1147,12 @@ footer {
     .banner-page__right {
       width: 60%;
       height: 335px;
-      background-image: url("../assets/img/compra-nosotros.png");
       background-position: center;
       background-size: cover; } }
+  .banner-page__right.nosotros {
+    background-image: url("../assets/img/compra-nosotros.png"); }
+  .banner-page__right.servicio {
+    background-image: url("../assets/img/compra-servicio.png"); }
   .banner-page__principal-content {
     width: 80%;
     margin-left: 20%;
@@ -3352,3 +3355,192 @@ footer {
     @media screen and (min-width: 721px) {
       .galeria__avance {
         font-size: 14px; } }
+
+.tab {
+  width: 100%;
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  margin-top: -70px;
+  position: relative;
+  z-index: 1; }
+  @media screen and (min-width: 721px) {
+    .tab {
+      margin-top: -50px; } }
+  @media screen and (min-width: 990px) {
+    .tab {
+      width: 900px;
+      margin: 0 auto;
+      margin-top: -40px; } }
+  @media screen and (min-width: 1201px) {
+    .tab {
+      margin-top: -50px; } }
+  @media screen and (min-width: 1440px) {
+    .tab {
+      width: 1100px;
+      margin-top: -55px; } }
+  .tab__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 1em; }
+  .tab__item {
+    -webkit-box-flex: 50%;
+    -ms-flex: 50% 1 1;
+    flex: 50% 1 1;
+    padding: 0 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer; }
+    @media screen and (min-width: 721px) {
+      .tab__item {
+        -webkit-box-flex: 25%;
+        -ms-flex: 25%;
+        flex: 25%; } }
+  .tab__text {
+    margin: 0;
+    text-align: center;
+    color: #545146;
+    font-family: "NovaSemibold";
+    padding: 1em 0;
+    border-bottom: solid 2px white; }
+    .tab__text:hover {
+      border-bottom: solid 2px #FFC300; }
+    .tab__text.active {
+      border-bottom: solid 2px #FFC300; }
+    @media screen and (min-width: 1201px) {
+      .tab__text {
+        padding: 1.5em 0; } }
+    @media screen and (min-width: 1440px) {
+      .tab__text {
+        font-size: 20px;
+        padding: 1.5em 0; } }
+
+.servicios-content {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  padding-bottom: 50px; }
+  @media screen and (min-width: 721px) {
+    .servicios-content {
+      width: 80%;
+      margin: 0 auto; } }
+  @media screen and (min-width: 990px) {
+    .servicios-content {
+      width: 800px; } }
+  @media screen and (min-width: 1440px) {
+    .servicios-content {
+      width: 1000px; } }
+
+@media screen and (min-width: 990px) {
+  .como-comprar {
+    padding-top: 10px; } }
+
+.como-comprar__title {
+  color: #545146;
+  font-size: 30px; }
+  @media screen and (min-width: 990px) {
+    .como-comprar__title {
+      font-size: 36px; } }
+  @media screen and (min-width: 1440px) {
+    .como-comprar__title {
+      font-size: 42px; } }
+
+.como-comprar__pasos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 30px; }
+
+.como-comprar__paso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px; }
+
+.como-comprar__numero {
+  padding: 0 10px; }
+
+.como-comprar__num {
+  width: 30px;
+  height: 30px;
+  background-color: #FFC300;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  font-family: "Novabold";
+  color: #545146;
+  font-size: 14px; }
+
+.como-comprar__textos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  @media screen and (min-width: 990px) {
+    .como-comprar__textos {
+      margin-left: 20px; } }
+
+.como-comprar__titulo {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #545146;
+  font-family: "NovaSemibold";
+  font-size: 16px; }
+  @media screen and (min-width: 1201px) {
+    .como-comprar__titulo {
+      font-size: 20px; } }
+  @media screen and (min-width: 1440px) {
+    .como-comprar__titulo {
+      font-size: 24px; } }
+
+.como-comprar__descripcion {
+  margin: 0;
+  color: #545146;
+  font-size: 14px;
+  line-height: 1.2; }
+  @media screen and (min-width: 1201px) {
+    .como-comprar__descripcion {
+      font-size: 16px; } }
+  @media screen and (min-width: 1440px) {
+    .como-comprar__descripcion {
+      font-size: 20px;
+      line-height: 1.3; } }
+
+@media screen and (min-width: 990px) {
+  .post-venta {
+    padding-top: 10px; } }
+
+.post-venta__title {
+  color: #545146;
+  font-size: 30px; }
+  @media screen and (min-width: 990px) {
+    .post-venta__title {
+      font-size: 36px; } }
+  @media screen and (min-width: 1440px) {
+    .post-venta__title {
+      font-size: 42px; } }

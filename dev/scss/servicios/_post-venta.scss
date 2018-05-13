@@ -1,0 +1,16 @@
+.post-venta{
+    @include desde(md){
+        padding-top: 10px;
+    }
+    &__title{
+        color: $gray;
+        font-size: 30px;
+        @include desde(md){
+            font-size: 36px;
+        }
+       
+        @include desde(xl){
+            font-size: 42px;
+        }
+    }
+}

@@ -18,9 +18,14 @@
         @include desde(sm){
             width: 60%;
             height: 335px;
-            background-image: img("compra-nosotros.png");
             background-position: center;
             background-size: cover;
+        }
+        &.nosotros{
+            background-image: img("compra-nosotros.png");
+        }
+        &.servicio{
+             background-image: img("compra-servicio.png");
         }
     }
     &__principal-content{
