@@ -1435,23 +1435,32 @@ footer {
       box-shadow: 0px 0px 8px 5px rgba(234, 234, 234, 0.8); }
       .view-options__item:hover .view-options__cont-img {
         position: relative; }
-        .view-options__item:hover .view-options__cont-img:before {
+        .view-options__item:hover .view-options__cont-img::after {
           content: "";
           position: absolute;
           width: 100%;
           height: 100%;
           top: 0;
           left: 0;
-          background-color: rgba(42, 41, 35, 0.4);
-          -webkit-transition: all .15s ease-in-out;
-          -o-transition: all .15s ease-in-out;
-          transition: all .15s ease-in-out; }
+          cursor: pointer;
+          background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
+          background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+          background: -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%); }
+      .view-options__item:hover .view-options__img {
+        position: absolute;
+        top: 0;
+        left: 0; }
       .view-options__item:hover .view-options__figure-hover {
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex; }
+        display: flex;
+        position: relative;
+        z-index: 1; }
       .view-options__item:hover .view-options__condition {
-        display: block; }
+        display: block;
+        position: relative;
+        z-index: 1; }
     @media screen and (min-width: 1201px) {
       .view-options__item {
         margin-right: 20px; }
@@ -1460,9 +1469,6 @@ footer {
   .view-options__cont-img {
     width: 280px;
     height: 300px;
-    background-image: url("../assets/img/banners.png");
-    background-size: cover;
-    background-position: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1476,6 +1482,13 @@ footer {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+  .view-options__img {
+    width: 280px;
+    height: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center; }
   .view-options__figure-hover {
     display: none;
     width: 130px;

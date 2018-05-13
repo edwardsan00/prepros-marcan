@@ -84,22 +84,32 @@
             box-shadow: 0px 0px 8px 5px rgba($gray-100, .8);
             .view-options__cont-img{
                 position: relative;
-            &:before{
+                 &::after{
                     content: "";
                     position: absolute;
                     width: 100%;
                     height: 100%;
                     top: 0;
                     left: 0;
-                    background-color: rgba(#2a2923, .4);
-                    transition: all .15s ease-in-out;
+                    cursor: pointer;
+                    background: linear-gradient(to bottom, rgba(0,0,0, .5) 0%, rgba(0,0,0, .5) 100%);
                 }
+            }
+            .view-options__img{
+                position: absolute;
+                top: 0;
+                left: 0;
+               
             }
             .view-options__figure-hover{
                 display: flex;
+                position: relative;
+                z-index: 1;
             }
             .view-options__condition{
                 display: block;
+                position: relative;
+                z-index: 1;
             }
         }
         @include desde(lg){
@@ -112,13 +122,16 @@
     &__cont-img{
         width: 280px;
         height: 300px;
-        background-image: url("../assets/img/banners.png");
-        background-size: cover;
-        background-position: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    &__img{
+        width: 280px;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
     }
     &__figure-hover{
         display: none;
