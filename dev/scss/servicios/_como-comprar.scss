@@ -1,4 +1,8 @@
 .como-comprar{
+    display: none;
+    &.active{
+        display: block;
+    }
     @include desde(md){
         padding-top: 10px;
     }

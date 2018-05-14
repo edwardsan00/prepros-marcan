@@ -1,4 +1,4 @@
-.post-venta{
+.compra-terreno{
     display: none;
     &.active{
         display: block;
@@ -8,7 +8,7 @@
     }
     &__title{
         color: $gray;
-        font-size: 30px;
+        font-size: 25px;
         @include desde(md){
             font-size: 36px;
         }
