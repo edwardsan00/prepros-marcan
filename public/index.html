@@ -687,15 +687,7 @@
         let heightSlide = $('.view-options').height();
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
-
-            console.log(heightSlide);
             scroll >= heightSlide ? $(".phone-fixed").addClass("active") : $(".phone-fixed").removeClass("active");
-        });
-        $('.phone-fixed__circle').on('mouseenter click', function () {
-            $('.phone-fixed__phone').addClass('active');
-        });
-        $('.phone-fixed').on('mouseleave', function () {
-            $('.phone-fixed__phone').removeClass('active');
         });
     </script>
 </body>

@@ -40,11 +40,14 @@
             </div>
         </div>
     </header>
+
     <div class="banner-page container-fluid">
         <div class="banner-page__left">
-            <div class="banner-page__principal-content">
-                <h1 class="banner-page__title">Trabaja con nosotros</h1>
-                <h3 class="banner-page__description">Forma parte del equipo Marcan</h3>
+            <div class='banner-page__box-content'>
+              <div class="banner-page__principal-content">
+                  <h1 class="banner-page__title">Trabaja con nosotros</h1>
+                  <h3 class="banner-page__description">Forma parte del equipo Marcan</h3>
+              </div>
             </div>
         </div>
         <div class="banner-page__right trabaja">
@@ -58,8 +61,8 @@
                 <div class="trabaja__divisor">
                     <h3 class="trabaja__titulo">Analista de Proyectos Inmobiliarios</h3>
                     <div class="trabaja__cont-botones">
-                        <a href="#" class="btn btn-gris">Mas Información</a>
-                        <a href="#" class="btn btn-amarillo">Postular</a>
+                        <div class="btn btn-gris">Mas Información</div>
+                        <div class="btn btn-amarillo">Postular</div>
                     </div>
                 </div>
             </div>
@@ -86,7 +89,7 @@
                     <p class="trabaja__texto"><span class="icon-derecha trabaja__arrow"></span> Elaboración de Informes</p>
                 </div>
             </div>
-            
+
         </div>
 
         <div class="trabaja__box">
@@ -95,8 +98,8 @@
                 <div class="trabaja__divisor">
                     <h3 class="trabaja__titulo">Analista de Proyectos Inmobiliarios</h3>
                     <div class="trabaja__cont-botones">
-                        <a href="#" class="btn btn-gris">Mas Información</a>
-                        <a href="#" class="btn btn-amarillo">Postular</a>
+                        <div class="btn btn-gris">Mas Información</div>
+                        <div class="btn btn-amarillo">Postular</div>
                     </div>
                 </div>
             </div>
@@ -123,7 +126,7 @@
                     <p class="trabaja__texto"><span class="icon-derecha trabaja__arrow"></span> Elaboración de Informes</p>
                 </div>
             </div>
-            
+
         </div>
 
         <div class="trabaja__box">
@@ -132,8 +135,8 @@
                 <div class="trabaja__divisor">
                     <h3 class="trabaja__titulo">Analista de Proyectos Inmobiliarios</h3>
                     <div class="trabaja__cont-botones">
-                        <a href="#" class="btn btn-gris">Mas Información</a>
-                        <a href="#" class="btn btn-amarillo">Postular</a>
+                        <div class="btn btn-gris">Mas Información</div>
+                        <div class="btn btn-amarillo">Postular</div>
                     </div>
                 </div>
             </div>
@@ -160,7 +163,7 @@
                     <p class="trabaja__texto"><span class="icon-derecha trabaja__arrow"></span> Elaboración de Informes</p>
                 </div>
             </div>
-            
+
         </div>
 
         <div class="trabaja__box">
@@ -169,8 +172,8 @@
                 <div class="trabaja__divisor">
                     <h3 class="trabaja__titulo">Analista de Proyectos Inmobiliarios</h3>
                     <div class="trabaja__cont-botones">
-                        <a href="#" class="btn btn-gris">Mas Información</a>
-                        <a href="#" class="btn btn-amarillo">Postular</a>
+                        <div class="btn btn-gris">Mas Información</div>
+                        <div class="btn btn-amarillo">Postular</div>
                     </div>
                 </div>
             </div>
@@ -197,7 +200,7 @@
                     <p class="trabaja__texto"><span class="icon-derecha trabaja__arrow"></span> Elaboración de Informes</p>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
@@ -293,9 +296,35 @@
         </div>
     </footer>
 
+    <div class="modal">
+        <div class="postula">
+            <p class="postula__cerrar cerrar-modal"><span class="icon-cerrar"></span></p>
+            <h3 class="postula__titulo">Postula aquí:</h3>
+            <form action="">
+                <div class="postula__row">
+                    <div class="input-content">
+                        <label>Nombre y Apellido: <span>*</span></label>
+                        <input type="text" required name="" id="">
+                    </div>
 
-
-
+                    <div class="input-content">
+                        <label>Curriculun Vitae: <span>*</span></label>
+                        <div class="content-file">
+                            <input type="file" placeholder="Nombre" required name="" id="">
+                            <label class="file">
+                            <span class="icon-adjuntar icn-img"></span>
+                            <span class="text-file">Adjuntar CV</span>
+                        </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__footer">
+                    <p class="campos-obligatorios">(<span>*</span>) Todos los campos son obligatorios</p>
+                    <input type="submit" value="Enviar Mensaje">
+                </div>
+            </form>
+        </div>
+    </div>
 
     <script src="js/jquery.js"></script>
     <script src="js/scroll/smooth-scroll.min.js"></script>
