@@ -162,8 +162,8 @@ header{
             @include desde(lg){
                 min-width: 120px;
                 &:nth-last-child(1){
-                    width: 166px;
-                    margin-left: 60px;
+                    width: 120px;
+                    margin-left: 0px;
                 }
             }
         }
