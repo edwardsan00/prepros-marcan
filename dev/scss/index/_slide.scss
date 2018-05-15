@@ -3,9 +3,10 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+    position: relative;
     &__center{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
     &__previus,&__next{
@@ -20,6 +21,7 @@
         font-size: 16px;
         cursor: pointer;
         transition: all .15s ease;
+        z-index: 2;
         @include desde(sm){
             width: 40px;
             height: 40px;
@@ -30,12 +32,22 @@
             transition: all .15s ease;
         }
     }
+    &__previus{
+      position: absolute;
+      top: 50vh;
+      left: 10%;
+    }
+    &__next{
+      position: absolute;
+      transform: translateY(-50vh);
+      right: 10%;
+    }
     &__cont-center{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 0 .5em;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 0 .5em;
     }
     &__name{
         font-family: $NovaLight;
@@ -96,12 +108,22 @@
     }
     @include desde(sm){
         width: 160px;
-        height: 45px; 
+        height: 45px;
         font-size: 14px;
     }
 }
 
 .slide-1{
+    background: linear-gradient(to bottom, rgba(29,29,27,0.7) 0%, rgba(29,29,27,0.34) 51%, rgba(29,29,27,0) 100%), img("banners.png");
+    background-size: cover;
+    background-position: center;
+}
+.slide-2{
+    background: linear-gradient(to bottom, rgba(29,29,27,0.7) 0%, rgba(29,29,27,0.34) 51%, rgba(29,29,27,0) 100%), img("banners-ava.png");
+    background-size: cover;
+    background-position: center;
+}
+.slide-3{
     background: linear-gradient(to bottom, rgba(29,29,27,0.7) 0%, rgba(29,29,27,0.34) 51%, rgba(29,29,27,0) 100%), img("banners.png");
     background-size: cover;
     background-position: center;

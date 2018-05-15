@@ -39,16 +39,15 @@
         </div>
     </header>
     <section class="slide-container container-fluid">
-        <div class="slide slide-1 container-fluid">
+        <div class="slide__previus">
+            <span class="icon-izquierda"></span>
+        </div>
+        <div class="slide__list">
+          <div class="slide slide-1 container-fluid">
             <div class="slide__top container"></div>
-
             <div class="slide__center container">
-                <div class="slide__previus">
-                    <span class="icon-izquierda"></span>
-                </div>
-
                 <div class="slide__cont-center">
-                    <h2 class="slide__name">Vive Vichayito</h2>
+                    <h2 class="slide__name">Vive Vichayito 1</h2>
                     <h1 class="slide__title">Tu casa de playa</h1>
                     <div class="slide__btn">
                         <a href="#" class="btn-slide">
@@ -56,16 +55,48 @@
                         </a>
                     </div>
                 </div>
-
-                <div class="slide__next">
-                    <span class="icon-derecha"></span>
-                </div>
             </div>
-
             <div class="slide__bottom container">
                 <span class="icon-mouse"></span>
             </div>
-
+          </div>
+          <div class="slide slide-2 container-fluid">
+            <div class="slide__top container"></div>
+            <div class="slide__center container">
+                <div class="slide__cont-center">
+                    <h2 class="slide__name">Vive Vichayito 2</h2>
+                    <h1 class="slide__title">Tu casa de playa</h1>
+                    <div class="slide__btn">
+                        <a href="#" class="btn-slide">
+                            <p class="text-slide">Ver Proyecto</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide__bottom container">
+                <span class="icon-mouse"></span>
+            </div>
+          </div>
+          <div class="slide slide-3 container-fluid">
+            <div class="slide__top container"></div>
+            <div class="slide__center container">
+                <div class="slide__cont-center">
+                    <h2 class="slide__name">Vive Vichayito 3</h2>
+                    <h1 class="slide__title">Tu casa de playa</h1>
+                    <div class="slide__btn">
+                        <a href="#" class="btn-slide">
+                            <p class="text-slide">Ver Proyecto</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide__bottom container">
+                <span class="icon-mouse"></span>
+            </div>
+        </div>
+      </div>
+        <div class="slide__next">
+            <span class="icon-derecha"></span>
         </div>
     </section>
     <div class="view-options-viviendas container-fluid">
@@ -689,6 +720,35 @@
             var scroll = $(window).scrollTop();
             scroll >= heightSlide ? $(".phone-fixed").addClass("active") : $(".phone-fixed").removeClass("active");
         });
+        $('.slide__list').slick({
+          arrows: false,
+          autoplay: true,
+          infinite: false,
+          speed: 2000,
+        });
+
+        $('.slide__list').on('afterChange', function(event, slick, currentSlide){
+            setTimeout(function(){
+              $('.slide').find('.slide__name').eq(currentSlide).removeClass('fade-in');
+              $('.slide').find('.slide__name').eq(currentSlide).addClass('fade-out');
+            }, 1000)
+
+        });
+        $('.slide__list').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            setTimeout(function(){
+              $('.slide').find('.slide__name').eq(nextSlide).addClass('fade-in');
+            }, 1000)
+
+        });
+        $('.slide-container  .slide__next').click(function(e){
+          e.preventDefault();
+          $('.slide__list').slick('slickNext');
+        })
+        $('.slide-container .slide__previus').click(function(e){
+          e.preventDefault();
+          $('.slide__list').slick('slickPrev');
+        })
+
     </script>
 </body>
 
