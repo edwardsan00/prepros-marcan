@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="./js/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./js/lightgallery/fancy-full/lightgallery.css" />
+    <link rel="stylesheet" href="./js/lightgallery/fancy-full/lg-fb-comment-box.css" />
+    <link rel="stylesheet" href="./js/lightgallery/fancy-full/lg-transitions.css" />
     <link rel="shortcut icon" type="image/png" href="assets/favicon/256.png" />
     <link rel="stylesheet" href="css/app.css">
 
@@ -114,29 +117,29 @@
     <div class="galeria container-fluid">
         <h1 class="galeria__titulo">Galería de fotos</h1>
         <div class="galeria__cont">
-            <div class="galeria__list">
-                <a href="#" class="galeria__item">
+            <div class="galeria__list gallery__fancy">
+                <a href="./assets/img/galeria.png" class="galeria__item">
                     <img src="./assets/img/galeria.png" class="galeria__img" alt="">
                     <div class="galeria__icono">
-                        <span class="icon-lupa"></span>
+                        <span class="icon-plus"></span>
                     </div>
                 </a>
-                <a href="#" class="galeria__item">
+                <a href="./assets/img/galeria.png" class="galeria__item">
                     <img src="./assets/img/galeria.png" class="galeria__img" alt="">
                     <div class="galeria__icono">
-                        <span class="icon-lupa"></span>
+                        <span class="icon-plus"></span>
                     </div>
                 </a>
-                <a href="#" class="galeria__item">
+                <a href="./assets/img/galeria.png" class="galeria__item">
                     <img src="./assets/img/galeria.png" class="galeria__img" alt="">
                     <div class="galeria__icono">
-                        <span class="icon-lupa"></span>
+                        <span class="icon-plus"></span>
                     </div>
                 </a>
-                <a href="#" class="galeria__item">
+                <a href="./assets/img/galeria.png" class="galeria__item">
                     <img src="./assets/img/galeria.png" class="galeria__img" alt="">
                     <div class="galeria__icono">
-                        <span class="icon-lupa"></span>
+                        <span class="icon-plus"></span>
                     </div>
                 </a>
             </div>
@@ -146,13 +149,17 @@
                         <p class="galeria__text">Vive la experiencia de
                             <br/> vacacionar
                             <br> en tu casa de playa</p>
-                        <div class="galeria__icono-video">
-                            <span class="icon-play galeria__icono-v"></span>
-                            <span class="galeria__avance">Ver avance de obra</span>
+                        <div class="fancy--video">
+                            <a href="https://www.youtube.com/watch?v=RKYjdTiMkXM" class="galeria__icono-video">
+                                <span class="icon-play galeria__icono-v"></span>
+                                <span class="galeria__avance">Ver avance de obra</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+
+
         </div>
     </div>
     <div class="phone-fixed active">
@@ -341,7 +348,25 @@
     <script src="js/jquery.js"></script>
     <script src="js/scroll/smooth-scroll.min.js"></script>
     <script src="js/slick/slick.min.js"></script>
+    <script src="./js/lightgallery/fancy-full/lightgallery.js"></script>
+    <script src="./js/lightgallery/fancy-full/lg-fullscreen.js"></script>
+    <script src="./js/lightgallery/fancy-full/lg-zoom.js"></script>
+    <script src="./js/lightgallery/fancy-full/lg-video.js"></script>
+    <script src="./js/lightgallery/fancy-full/lg-autoplay.js"></script>
     <script src="js/main-dist.js"></script>
+    <script>
+        $(()=>{
+            //- VIDEO
+            $('.fancy--video').lightGallery({
+                selector: 'a'
+            });
+
+            //- GALERIA	
+            $('.gallery__fancy').lightGallery({
+                selector: 'a'
+            });
+        })
+    </script>
 </body>
 
 </html>
