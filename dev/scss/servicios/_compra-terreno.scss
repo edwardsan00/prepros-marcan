@@ -1,5 +1,6 @@
 .compra-terreno{
     display: none;
+    background-color: white;
     &.active{
         display: block;
     }
@@ -12,7 +13,7 @@
         @include desde(md){
             font-size: 36px;
         }
-       
+
         @include desde(xl){
             font-size: 42px;
         }
