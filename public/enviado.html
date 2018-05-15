@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="./js/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css" />
-    <link rel="stylesheet" href="./js/validation/validationEngine.jquery.css"/>
     <link rel="shortcut icon" type="image/png" href="assets/favicon/256.png" />
     <link rel="stylesheet" href="css/app.css">
 
-    <title>Marcan</title>
+    <title>Marcan - 404</title>
 </head>
 
 <body>
@@ -41,74 +40,19 @@
         </div>
     </header>
 
-
-    <div class="cotizar-container container-fluid">
-        <div class="cotizar container">
-            <h1 class="cotizar__title">
-                Cotiza aquí el proyecto de tus sueños. </br>Déjanos tus datos
-            </h1>
-            <div class="cotizar__cont">
-                <div class="cotizar__left">
-                    <div class="cotizar__box">
-                        <form action="" class="cotizar__form" id="form__validation">
-                            <div class="cotizar__row">
-                                <div class="input-content">
-                                    <label>Proyecto: <span>*</span></label>
-                                    <select name="" id="" class="validate[required]">
-                                        <option value="" selected>Vive Vichayito</option>
-                                    </select>
-                                </div>
-                                <div class="input-content">
-                                    <label>Nombres: <span>*</span></label>
-                                    <input class="validate[required]" type="text"  name="" id="">
-                                </div>
-                                <div class="input-content">
-                                    <label>Apellidos: <span>*</span></label>
-                                    <input class="validate[required]" type="text" name="" id="">
-                                </div>
-                                <div class="input-content">
-                                    <label>Teléfono: <span>*</span></label>
-                                    <input class="validate[required]" type="text" name="" id="">
-                                </div>
-                                <div class="input-content email">
-                                    <label>Email: <span>*</span></label>
-                                    <input class="validate[required]" type="email" name="" id="">
-                                </div>
-                                <div class="cotizar__row textarea">
-                                    <div class="input-content textarea">
-                                        <label>Mensaje: <span>*</span></label>
-                                        <textarea class="validate[required]" name="" id="" cols="30" rows="10"></textarea>
-                                    </div>
-                                </div>
-                                <div class="form__footer">
-                                    <p class="campos-obligatorios">(<span>*</span>) Todos los campos son obligatorios</p>
-                                    <div class="terminos-condiciones">
-                                        <input class="validate[required]" type="checkbox" name="" id="">
-                                        <p class="text-terminos">He leido y acepto las <a href="#"> condiciones de tratamiento de mis datos personales</a></p>
-                                    </div>
-                                    <input type="submit" value="Enviar Mensaje">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="cotizar__right">
-                </div>
-            </div>
+    <div class="error" style="background-image: url('assets/img/banners.png')">
+        <div class="error__content">
+            <img src="assets/img/Recurso-3.png" alt="">
+            <p class="error__content__text">
+                Gracias por enviar tu solicito <br>
+                En breve te responderemos
+            </p>
+            <a href="#" class=" btn btn__yellow">
+                <p class="btn__yellow__text">Volver</p>
+            </a>
         </div>
-
     </div>
 
-    <div class="phone-fixed active">
-        <div class="phone-fixed__phone">
-            <a href="tel:998137302" class="phone-fixed__phone-text">Llámanos: 998 137 302</a>
-        </div>
-        <div class="phone-fixed__circle">
-            <span class="icon-call"></span>
-        </div>
-        <div class="gota1"></div>
-        <div class="gota2"></div>
-    </div>
 
     <footer class="container-fluid">
         <div class="footer container">
@@ -193,17 +137,11 @@
 
 
 
+
     <script src="js/jquery.js"></script>
     <script src="js/scroll/smooth-scroll.min.js"></script>
     <script src="js/slick/slick.min.js"></script>
     <script src="js/main-dist.js"></script>
-    <script src="js/validation/jquery.validationEngine-es.js"></script>
-    <script src="js/validation/jquery.validationEngine.js"></script>
-    <script>
-        $(()=>{
-            $("#form__validation").validationEngine();
-        })
-    </script>
 </body>
 
 </html>
