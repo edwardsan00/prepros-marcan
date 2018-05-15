@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="./js/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./js/validation/validationEngine.jquery.css"/>
     <link rel="shortcut icon" type="image/png" href="assets/favicon/256.png" />
     <link rel="stylesheet" href="css/app.css">
 
@@ -300,17 +301,17 @@
         <div class="postula">
             <p class="postula__cerrar cerrar-modal"><span class="icon-cerrar"></span></p>
             <h3 class="postula__titulo">Postula aquí:</h3>
-            <form action="">
+            <form action="" id="form__validation">
                 <div class="postula__row">
                     <div class="input-content">
                         <label>Nombre y Apellido: <span>*</span></label>
-                        <input type="text" required name="" id="">
+                        <input class="validate[required]" type="text" required name="" id="">
                     </div>
 
                     <div class="input-content">
                         <label>Curriculun Vitae: <span>*</span></label>
                         <div class="content-file">
-                            <input type="file" placeholder="Nombre" required name="" id="">
+                            <input class="validate[required]" type="file" placeholder="Nombre" required name="" id="">
                             <label class="file">
                             <span class="icon-adjuntar icn-img"></span>
                             <span class="text-file">Adjuntar CV</span>
@@ -330,6 +331,13 @@
     <script src="js/scroll/smooth-scroll.min.js"></script>
     <script src="js/slick/slick.min.js"></script>
     <script src="js/main-dist.js"></script>
+    <script src="js/validation/jquery.validationEngine-es.js"></script>
+    <script src="js/validation/jquery.validationEngine.js"></script>
+    <script>
+        $(()=>{
+            $("#form__validation").validationEngine();
+        })
+    </script>
 </body>
 
 </html>

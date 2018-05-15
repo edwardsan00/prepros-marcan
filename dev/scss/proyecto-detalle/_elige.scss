@@ -39,6 +39,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        .btn-gray{
+          width: 120px;
+        }
         &:nth-child(0n + 1){
           border-left: solid 1px $gray-100;
         }

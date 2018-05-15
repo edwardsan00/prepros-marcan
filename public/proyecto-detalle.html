@@ -19,7 +19,7 @@
 
 <body>
 
-    <!-- <header class="container-fluid">
+    <header class="container-fluid">
         <div class="header container">
             <div class="header__logo">
                 <a href="#"><img src="assets/img/logo-header.png" class="header__img" alt="Marcan"></a>
@@ -41,7 +41,38 @@
                 </ul>
             </div>
         </div>
-    </header> -->
+    </header>
+
+
+    <div class="pbanner" style="background-image: url('assets/img/banners-oficina.png')">
+        <div class="pbanner__content container">
+            <div class="pbanner__content__left">
+                Invierte, trabaja y más <br>
+                oficinas boutique para <br>
+                emprendedores
+            </div>
+            <div class="pbanner__content__box">
+                <div class="pbanner__content__box__top">
+                    <div class="pbanner__content__box__top__item">
+                        <img src="assets/img/Recurso2.png" alt="">
+                    </div>
+                    <div class="pbanner__content__box__top__item">
+                        <p>DESDE</p>
+                        <strong>US$ 101,900</strong>
+                    </div>
+                    <div class="pbanner__content__box__top__item">
+                        <p>DESDE</p>
+                        <strong><img src="assets/img/Recurso3.png" alt="" width="22px"> 23.00 <small>m<sup>2</sup></small></strong>
+                    </div>
+                </div>
+                <div class="pbanner__content__box__bottom">
+                    <a href="#" class="btn-gray">
+                        <p class="btn-gray__text">Cotizar</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div class="pdetalle container">
@@ -141,7 +172,9 @@
                     S/. 148.000
                 </div>
                 <div class="elige__table__row__tr">
-                    bottom
+                    <a href="#" class="btn-gray">
+                        <p class="btn-gray__text">Cotizar</p>
+                    </a>
                 </div>
             </div>
             <div class="elige__table__row">
@@ -161,7 +194,9 @@
                     S/. 148.000
                 </div>
                 <div class="elige__table__row__tr">
-                    bottom
+                    <a href="#" class="btn-gray">
+                        <p class="btn-gray__text">Cotizar</p>
+                    </a>
                 </div>
             </div>
             <div class="elige__table__row">
@@ -181,7 +216,9 @@
                     S/. 148.000
                 </div>
                 <div class="elige__table__row__tr">
-                    bottom
+                    <a href="#" class="btn-gray">
+                        <p class="btn-gray__text">Cotizar</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -409,9 +446,11 @@
                 <p class="galeria__text">Vive la experiencia de
                     <br/> vacacionar
                     <br> en tu casa de playa</p>
-                <div class="galeria__icono-video">
-                    <span class="icon-play galeria__icono-v"></span>
-                    <span class="galeria__avance">Ver avance de obra</span>
+                <div class="fancy--video">
+                    <a href="https://www.youtube.com/watch?v=RKYjdTiMkXM" class="galeria__icono-video">
+                        <span class="icon-play galeria__icono-v"></span>
+                        <span class="galeria__avance">Ver avance de obra</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -515,6 +554,10 @@
     <script src="js/googlemaps.js"></script>
     <script>
         $(()=>{
+            //- VIDEO
+            $('.fancy--video').lightGallery({
+                selector: 'a'
+            });
             //- GALERIA	
             $('.gallery__fancy').lightGallery({
                 selector: 'a'
