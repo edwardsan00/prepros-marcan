@@ -27,6 +27,9 @@
         &.servicio{
              background-image: img("compra-servicio.png");
         }
+        &.trabaja{
+            background-image: img("compra-trabaja.png");
+        }
     }
     &__principal-content{
         width: 80%;

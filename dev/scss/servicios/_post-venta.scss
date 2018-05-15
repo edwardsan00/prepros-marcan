@@ -1,4 +1,8 @@
 .post-venta{
+    display: none;
+    &.active{
+        display: block;
+    }
     @include desde(md){
         padding-top: 10px;
     }
@@ -12,5 +16,10 @@
         @include desde(xl){
             font-size: 42px;
         }
+    }
+
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
     }
 }

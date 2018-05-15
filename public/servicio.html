@@ -69,7 +69,52 @@
         </div>
 
         <div class="servicios-content">
-            <!--<div class="como-comprar">
+            
+            <div class="post-venta active">
+                <h1 class="post-venta__title">¿Post Venta?</h1>
+                <form action="#" class="post-venta__form">
+                    <div class="post-venta__row">
+                        <div class="input-content">
+                            <label>Nombre: <span>*</span></label>
+                            <input type="text" placeholder="Nombre" name="" id="">
+                        </div>
+                        <div class="input-content">
+                            <label>Apellidos: <span>*</span></label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="input-content">
+                            <label>Teléfono: <span>*</span></label>
+                            <input type="text"  required name="" id="">
+                        </div>
+                        <div class="input-content">
+                            <label>Email: <span>*</span></label>
+                            <input type="email"  required name="" id="">
+                        </div>
+                        <div class="input-content">
+                            <label>Nombre del proyecto: <span>*</span></label>
+                            <select name="" id="">
+                                <option value="" selected>Nombre de entregado</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="post-venta__row">
+                        <div class="input-content textarea">
+                            <label>Detalles: <span>*</span></label>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="form__footer">
+                        <p class="campos-obligatorios">(<span>*</span>) Todos los campos son obligatorios</p>
+                        <div class="terminos-condiciones">
+                            <input type="checkbox" name="" id="">
+                            <p class="text-terminos">He leido y acepto las <a href="#"> condiciones de tratamiento de mis datos personales</a></p>
+                        </div>
+                        <input type="submit" value="Enviar Mensaje">
+                    </div>
+                </form>
+            </div> 
+
+            <div class="como-comprar">
                 <h1 class="como-comprar__title">¿Cómo comprar?</h1>
                 <div class="como-comprar__pasos">
                     <div class="como-comprar__paso">
@@ -143,20 +188,150 @@
                         </div>
                     </div>
                 </div>
-            </div>-->
-
-            <div class="post-venta">
-                 <h1 class="post-venta__title">¿Post Venta?</h1>
-                 <form action="#" class="post-venta__form">
-                    <div class="input-content">
-                        <label>Nombre: </label>
-                        <input type="text" name="" id="">
-                    </div>
-                 </form>
             </div>
+
+            <div class="compra-terreno">
+                <form action="#" class="compra-terreno__form">
+                    <h1 class="compra-terreno__title">Datos Personales</h1>
+                    <div class="compra-terreno__row">
+                        <div class="input-content">
+                            <label>Nombre y Apellidos: <span>*</span></label>
+                            <input type="text"  name="" id="">
+                        </div>
+                        <div class="input-content">
+                            <label>Télefono: <span>*</span></label>
+                            <input type="text"  name="" id="">
+                        </div>
+                        <div class="input-content">
+                            <label>Email: <span>*</span></label>
+                            <input type="text"  required name="" id="">
+                        </div>
+                    </div>
+                    <div class="linea"></div>
+                    <h1 class="compra-terreno__title">Datos del Terreno</h1>
+                    <div class="compra-terreno__row">
+                        <div class="input-content">
+                            <label>Distrito: <span>*</span></label>
+                            <select name="" id="">
+                                <option value="" selected>Seleccione</option>
+                            </select>
+                        </div>
+                        <div class="input-content">
+                            <label>Dirección: <span>*</span></label>
+                            <input type="text"  name="" id="">
+                        </div>
+                        <div class="input-content">
+                            <label>Ref. de la Ubicación: <span>*</span></label>
+                            <input type="text"  name="" id="">
+                        </div>
+                        <div class="input-content">
+                            <label>Área Total: <span>*</span></label>
+                            <input type="text" required name="" id="">
+                        </div>
+                        <div class="input-content">
+                            <label>N° de Partida: <span>*</span></label>
+                            <input type="text"  required name="" id="">
+                        </div>
+                        <div class="input-content">
+                            <label>Ficha de registro público: <span>*</span></label>
+                            <input type="text"  required name="" id="">
+                        </div>
+                        <div class="input-content">
+                            <label>N° de Partida: <span>*</span></label>
+                            <input type="text"  required name="" id="">
+                        </div>
+                        <div class="input-content">
+                            <label>Moneda: <span>*</span></label>
+                            <select name="" id="">
+                                <option value="" selected>Seleccione</option>
+                            </select>
+                        </div>
+                        <div class="input-content">
+                            <label>Precio de terreno: <span>*</span></label>
+                            <input type="text"  required name="" id="">
+                        </div>
+                    </div>
+                    <div class="input-content">
+                        <label>Fotografia: <span>*</span></label>
+                        <div class="content-file">
+                            <input type="file" placeholder="Nombre" required name="" id="">
+                            <label class="file">
+                                    <span class="icon-img icn-img"></span>
+                                    <span class="text-file">Adjuntar Fotografia</span>
+                                </label>
+                        </div>
+                    </div>
+                    <div class="form__footer">
+                        <p class="campos-obligatorios">(<span>*</span>) Todos los campos son obligatorios</p>
+                        <div class="terminos-condiciones">
+                            <input type="checkbox" name="" id="">
+                            <p class="text-terminos">He leido y acepto las <a href="#"> condiciones de tratamiento de mis datos personales</a></p>
+                        </div>
+                        <input type="submit" value="Enviar Mensaje">
+                    </div>
+                </form>
+            </div>
+
+            <div class="manual-usuario">
+                <h1 class="manual-usuario__title">Manual de Usuario</h1>
+                <div class="manual-usuario__manuales">
+                    <a href="#" class="manual-usuario__manual">
+                        <p class="manual-usuario__icono"><span class="icon-pdf"></span> </p>
+                        <p class="manual-usuario__text">Proyecto Vive Vichayito
+                        </p>
+                    </a>
+                    <a href="#" class="manual-usuario__manual">
+                        <p class="manual-usuario__icono"><span class="icon-pdf"></span> </p>
+                        <p class="manual-usuario__text">Proyecto Tandem Pueblo Libre
+                        </p>
+                    </a>
+                    <a href="#" class="manual-usuario__manual">
+                        <p class="manual-usuario__icono"><span class="icon-pdf"></span> </p>
+                        <p class="manual-usuario__text">Proyecto Metropolis Miraflores
+                        </p>
+                    </a>
+                    <a href="#" class="manual-usuario__manual">
+                        <p class="manual-usuario__icono"><span class="icon-pdf"></span> </p>
+                        <p class="manual-usuario__text">Proyecto Tandem Pueblo Libre
+                        </p>
+                    </a>
+                    <a href="#" class="manual-usuario__manual">
+                        <p class="manual-usuario__icono"><span class="icon-pdf"></span> </p>
+                        <p class="manual-usuario__text">Proyecto Metropolis Miraflores
+                        </p>
+                    </a>
+                    <a href="#" class="manual-usuario__manual">
+                        <p class="manual-usuario__icono"><span class="icon-pdf"></span> </p>
+                        <p class="manual-usuario__text">Proyecto Metropolis Miraflores
+                        </p>
+                    </a>
+                    <a href="#" class="manual-usuario__manual">
+                        <p class="manual-usuario__icono"><span class="icon-pdf"></span> </p>
+                        <p class="manual-usuario__text">Proyecto Metropolis Miraflores
+                        </p>
+                    </a>
+                    <a href="#" class="manual-usuario__manual">
+                        <p class="manual-usuario__icono"><span class="icon-pdf"></span> </p>
+                        <p class="manual-usuario__text">Proyecto Metropolis Miraflores
+                        </p>
+                    </a>
+                </div>
+            </div> 
+
         </div>
     </div>
 
+
+    <div class="phone-fixed active">
+        <div class="phone-fixed__phone">
+            <a href="tel:998137302" class="phone-fixed__phone-text">Llámanos: 998 137 302</a>
+        </div>
+        <div class="phone-fixed__circle">
+            <span class="icon-call"></span>
+        </div>
+        <div class="gota1"></div>
+        <div class="gota2"></div>
+    </div>
 
     <footer class="container-fluid">
         <div class="footer container">

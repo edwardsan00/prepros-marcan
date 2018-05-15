@@ -1,0 +1,25 @@
+.compra-terreno{
+    display: none;
+    &.active{
+        display: block;
+    }
+    @include desde(md){
+        padding-top: 10px;
+    }
+    &__title{
+        color: $gray;
+        font-size: 25px;
+        @include desde(md){
+            font-size: 36px;
+        }
+       
+        @include desde(xl){
+            font-size: 42px;
+        }
+    }
+
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
