@@ -30,6 +30,12 @@
         &.trabaja{
             background-image: img("compra-trabaja.png");
         }
+        &.terreno{
+            background-image: img("compra-terreno.png");
+        }
+        &.vivienda{
+            background-image: img("compra-venta.png");
+        }
     }
     &__box-content{
         width: 80%;

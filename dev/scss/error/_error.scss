@@ -2,6 +2,8 @@
   height: calc(100vh - 70px );
   position: relative;
   margin-top: 70px;
+  background-position: center;
+  background-size: cover;
   &:after{
     content: '';
     width: 100%;

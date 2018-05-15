@@ -575,6 +575,13 @@ ul {
 .overflow {
   overflow: hidden; }
 
+.text-gray {
+  color: white;
+  font-size: 16px; }
+
+.btn-extra {
+  cursor: pointer; }
+
 .input-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1450,6 +1457,10 @@ footer {
     background-image: url("../assets/img/compra-servicio.png"); }
   .banner-page__right.trabaja {
     background-image: url("../assets/img/compra-trabaja.png"); }
+  .banner-page__right.terreno {
+    background-image: url("../assets/img/compra-terreno.png"); }
+  .banner-page__right.vivienda {
+    background-image: url("../assets/img/compra-venta.png"); }
   .banner-page__box-content {
     width: 80%;
     margin-left: 20%;
@@ -3813,6 +3824,9 @@ footer {
     .tab {
       width: 1100px;
       margin-top: -55px; } }
+  @media screen and (min-width: 721px) {
+    .tab.entregados {
+      width: 50%; } }
   .tab__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4068,7 +4082,9 @@ footer {
 .error {
   height: calc(100vh - 70px);
   position: relative;
-  margin-top: 70px; }
+  margin-top: 70px;
+  background-position: center;
+  background-size: cover; }
   .error:after {
     content: '';
     width: 100%;
@@ -4175,14 +4191,15 @@ footer {
   flex-wrap: wrap;
   text-align: center;
   margin-top: 30px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
   .proyecto-entregados__items-content__item {
     width: 290px;
     padding: 0px 5px;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    margin: 10px 0; }
     .proyecto-entregados__items-content__item__name {
       font-family: "Novabold";
       font-size: 19px;
@@ -4568,7 +4585,8 @@ footer {
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    z-index: 100; }
 
 .postula {
   width: 90%;
@@ -5330,3 +5348,254 @@ footer {
             width: 30px;
             height: 100%;
             margin-bottom: 10px; }
+
+.venta-viviendas {
+  background-color: white;
+  padding-bottom: 2em; }
+
+.venta-oficinas {
+  background-color: #E5E5E5;
+  padding-bottom: 2em; }
+  .venta-oficinas * .view-options__item:hover {
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(2, 2, 2, 0.1);
+    box-shadow: 0px 0px 8px 2px rgba(2, 2, 2, 0.1); }
+  .venta-oficinas * .view-options__cont-hab {
+    border-top: solid 1px white;
+    border-bottom: solid 1px white; }
+
+.venta {
+  padding: 30px 0; }
+  .venta__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    width: 100%; }
+  .venta__item {
+    -webkit-box-flex: 260px;
+    -ms-flex: 260px 0 0px;
+    flex: 260px 0 0;
+    height: 553px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 10px;
+    margin: 20px 0; }
+    .venta__item:nth-last-child(1) {
+      margin-right: 0; }
+    .venta__item:hover {
+      -webkit-box-shadow: 0px 0px 8px 5px rgba(234, 234, 234, 0.8);
+      box-shadow: 0px 0px 8px 5px rgba(234, 234, 234, 0.8); }
+      .venta__item:hover .view-options__cont-img {
+        position: relative; }
+        .venta__item:hover .view-options__cont-img::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          cursor: pointer;
+          background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
+          background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+          background: -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%); }
+      .venta__item:hover .view-options__img {
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .venta__item:hover .view-options__figure-hover {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        z-index: 1; }
+      .venta__item:hover .view-options__condition {
+        display: block;
+        position: relative;
+        z-index: 1; }
+    @media screen and (min-width: 1201px) {
+      .venta__item {
+        margin-right: 20px; }
+        .venta__item:nth-last-child(1) {
+          margin-right: 0; } }
+  .venta__cont-img {
+    width: 280px;
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .venta__img {
+    width: 280px;
+    height: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center; }
+  .venta__figure-hover {
+    display: none;
+    width: 130px;
+    height: 90px;
+    border: solid 1px white; }
+    .venta__figure-hover img {
+      position: relative; }
+  .venta__condition {
+    display: none;
+    background-color: #FFC300;
+    position: relative;
+    margin-top: 1em; }
+  .venta__condition-text {
+    text-transform: uppercase;
+    color: #545146;
+    font-size: 13px;
+    font-family: "Novabold";
+    margin: 0;
+    padding: .5em .8em; }
+  .venta__cont-description {
+    width: 100%; }
+  .venta__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1.5em 0; }
+  .venta__app {
+    font-size: 19px;
+    font-family: "Novabold";
+    margin: 0;
+    color: #020202; }
+  .venta__ubc {
+    font-size: 14px;
+    font-family: "NovaLight";
+    margin: 0;
+    margin-top: 6px;
+    color: #020202; }
+  .venta__cont-hab {
+    border-top: solid 1px #E5E5E5;
+    border-bottom: solid 1px #E5E5E5;
+    padding: .7em .5em;
+    margin-left: 10px;
+    margin-right: 10px; }
+  .venta__hab-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .venta__hab-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #9EA1A2;
+    font-family: "NovaSemibold"; }
+    .venta__hab-item .icono {
+      margin-right: 15px;
+      font-size: 22px; }
+    .venta__hab-item .description {
+      font-size: 13px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .venta__hab-item .cd2 {
+      font-size: 7px;
+      -ms-flex-item-align: start;
+      align-self: flex-start; }
+  .venta__cont-precio {
+    padding: 1em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .venta__precio-text {
+    margin: 0;
+    font-size: 13px;
+    font-family: "NovaSemibold"; }
+  .venta__precio-bold {
+    font-family: "Novabold";
+    font-size: 16px;
+    letter-spacing: 0.80px; }
+  .venta__cont-btn {
+    padding: 1em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+.btn-gray {
+  width: 200px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 3px;
+  background-color: #545146;
+  cursor: pointer;
+  -webkit-transition: all .15s ease;
+  -o-transition: all .15s ease;
+  transition: all .15s ease; }
+  .btn-gray:hover {
+    background-color: rgba(84, 81, 70, 0.8);
+    -webkit-transition: all .15s ease;
+    -o-transition: all .15s ease;
+    transition: all .15s ease; }
+  .btn-gray__text {
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase; }
+
+.slick-initialized .slick-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }

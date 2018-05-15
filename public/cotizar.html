@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="./js/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css" />
-    <link rel="stylesheet" href="./js/validation/validationEngine.jquery.css"/>
+    <link rel="stylesheet" href="./js/validation/validationEngine.jquery.css" />
     <link rel="shortcut icon" type="image/png" href="assets/favicon/256.png" />
     <link rel="stylesheet" href="css/app.css">
 
@@ -20,7 +20,9 @@
     <header class="container-fluid">
         <div class="header container">
             <div class="header__logo">
-                <a href="#"><img src="assets/img/logo-header.png" class="header__img" alt="Marcan"></a>
+                <a href="index.html">
+                    <img src="assets/img/logo-header.png" class="header__img" alt="Marcan">
+                </a>
             </div>
             <div class="header__menu">
                 <div class="header__menu-movil" id="menu-movil">
@@ -34,7 +36,7 @@
                         <a href="oficinas.html" class="header__link">Oficinas</a>
                     </li>
                     <li class="header__item">
-                        <a href="contacto.html" class="header__link">Contáctanos</a>
+                        <a href="cotizar.html" class="header__link">Contáctanos</a>
                     </li>
                 </ul>
             </div>
@@ -53,38 +55,53 @@
                         <form action="" class="cotizar__form" id="form__validation">
                             <div class="cotizar__row">
                                 <div class="input-content">
-                                    <label>Proyecto: <span>*</span></label>
+                                    <label>Proyecto:
+                                        <span>*</span>
+                                    </label>
                                     <select name="" id="" class="validate[required]">
                                         <option value="" selected>Vive Vichayito</option>
                                     </select>
                                 </div>
                                 <div class="input-content">
-                                    <label>Nombres: <span>*</span></label>
-                                    <input class="validate[required]" type="text"  name="" id="">
-                                </div>
-                                <div class="input-content">
-                                    <label>Apellidos: <span>*</span></label>
+                                    <label>Nombres:
+                                        <span>*</span>
+                                    </label>
                                     <input class="validate[required]" type="text" name="" id="">
                                 </div>
                                 <div class="input-content">
-                                    <label>Teléfono: <span>*</span></label>
+                                    <label>Apellidos:
+                                        <span>*</span>
+                                    </label>
+                                    <input class="validate[required]" type="text" name="" id="">
+                                </div>
+                                <div class="input-content">
+                                    <label>Teléfono:
+                                        <span>*</span>
+                                    </label>
                                     <input class="validate[required]" type="text" name="" id="">
                                 </div>
                                 <div class="input-content email">
-                                    <label>Email: <span>*</span></label>
+                                    <label>Email:
+                                        <span>*</span>
+                                    </label>
                                     <input class="validate[required]" type="email" name="" id="">
                                 </div>
                                 <div class="cotizar__row textarea">
                                     <div class="input-content textarea">
-                                        <label>Mensaje: <span>*</span></label>
+                                        <label>Mensaje:
+                                            <span>*</span>
+                                        </label>
                                         <textarea class="validate[required]" name="" id="" cols="30" rows="10"></textarea>
                                     </div>
                                 </div>
                                 <div class="form__footer">
-                                    <p class="campos-obligatorios">(<span>*</span>) Todos los campos son obligatorios</p>
+                                    <p class="campos-obligatorios">(
+                                        <span>*</span>) Todos los campos son obligatorios</p>
                                     <div class="terminos-condiciones">
                                         <input class="validate[required]" type="checkbox" name="" id="">
-                                        <p class="text-terminos">He leido y acepto las <a href="#"> condiciones de tratamiento de mis datos personales</a></p>
+                                        <p class="text-terminos">He leido y acepto las
+                                            <a class="open-modal-politicas"> condiciones de tratamiento de mis datos personales</a>
+                                        </p>
                                     </div>
                                     <input type="submit" value="Enviar Mensaje">
                                 </div>
@@ -114,7 +131,9 @@
         <div class="footer container">
             <div class="footer__top">
                 <div class="footer__logo">
-                    <a href="#"><img src="assets/img/logo-footer.png" class="footer__img" alt="Marcan"></a>
+                    <a href="index.html">
+                        <img src="assets/img/logo-footer.png" class="footer__img" alt="Marcan">
+                    </a>
                 </div>
                 <div class="footer__contactanos">
                     <div class="footer__box-contactanos">
@@ -125,7 +144,7 @@
                         </a>
                     </div>
                     <div class="footer__box-contactanos">
-                        <a href="#contacto" class="footer__box-link">
+                        <a href="cotizar.html" class="footer__box-link">
                             <span class=" icon icon-mensaje"></span>
                             <span class="bold">Escríbenos: </span>
                             <span class="complement-text">ventas@marcan.com.pe</span>
@@ -140,8 +159,12 @@
                             <p class="footer__title">Proyectos</p>
                         </div>
                         <ul class="footer__list">
-                            <li class="footer__item"><a href="#" class="footer__link">Viviendas</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Oficinas</a></li>
+                            <li class="footer__item">
+                                <a href="viviendas.html" class="footer__link">Viviendas</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="oficinas.html" class="footer__link">Oficinas</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="footer__box-anchor">
@@ -149,9 +172,15 @@
                             <p class="footer__title">Cónocenos</p>
                         </div>
                         <ul class="footer__list">
-                            <li class="footer__item"><a href="#" class="footer__link">Somos Marcan</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Proyectos entregados</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Trabaja en Marcan</a></li>
+                            <li class="footer__item">
+                                <a href="nosotros.html" class="footer__link">Somos Marcan</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="entregados-viviendas.html" class="footer__link">Proyectos entregados</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="trabaja-con-nosotros.html" class="footer__link">Trabaja en Marcan</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="footer__box-anchor">
@@ -159,9 +188,15 @@
                             <p class="footer__title">Post Venta</p>
                         </div>
                         <ul class="footer__list">
-                            <li class="footer__item"><a href="#" class="footer__link">Post venta</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">¿Como comprar?</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Comprar terreno</a></li>
+                            <li class="footer__item">
+                                <a href="servicios.html" class="footer__link">Post venta</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="servicios.html" class="footer__link">¿Como comprar?</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="servicios.html" class="footer__link">Comprar terreno</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="footer__box-anchor">
@@ -169,13 +204,31 @@
                             <p class="footer__title">Blog</p>
                         </div>
                         <ul class="footer__list">
-                            <li class="footer__item"><a href="#" class="footer__link">Politicas de privacidad</a></li>
+                            <li class="footer__item">
+                                <a class="open-modal-politicas footer__link">Politicas de privacidad</a>
+                            </li>
                             <li class="footer__item">
                                 <ul class="footer__social">
-                                    <li class="footer__social-item"><a href="#" class="footer__social-link"><span class="icon-facebook"></span></a></li>
-                                    <li class="footer__social-item"><a href="#" class="footer__social-link"><span class="icon-instagram"></span></a></li>
-                                    <li class="footer__social-item"><a href="#" class="footer__social-link"><span class="icon-youtube"></span></a></li>
-                                    <li class="footer__social-item"><a href="#" class="footer__social-link"><span class="icon-linkedin"></span></a></li>
+                                    <li class="footer__social-item">
+                                        <a href="#" class="footer__social-link">
+                                            <span class="icon-facebook"></span>
+                                        </a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a href="#" class="footer__social-link">
+                                            <span class="icon-instagram"></span>
+                                        </a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a href="#" class="footer__social-link">
+                                            <span class="icon-youtube"></span>
+                                        </a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a href="#" class="footer__social-link">
+                                            <span class="icon-linkedin"></span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -184,7 +237,10 @@
                 <div class="footer__contend-copy">
                     <p class="footer__copy">Marcan© Copyright 2018 - Todos los derechos reservados</p>
                     <a href="#" class="footer__desing-link">
-                        <p class="footer__desing">Diseño web by <span class="icon-ubicacion"></span> <strong>StaffDigital</strong></p>
+                        <p class="footer__desing">Diseño web by
+                            <span class="icon-ubicacion"></span>
+                            <strong>StaffDigital</strong>
+                        </p>
                     </a>
                 </div>
             </div>
@@ -192,6 +248,53 @@
     </footer>
 
 
+    <div class="modal">
+        <div class="politica">
+            <p class="politica__cerrar cerrar-modal">
+                <span class="icon-cerrar"></span>
+            </p>
+            <h3 class="politica__titulo">Políticas de Privacidad</h3>
+            <div class="politica__row">
+                <p class="politica__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A hic doloremque vel ab fugiat est rem distinctio,
+                    nihil, maiores voluptas cumque illo, sapiente quam. Facere incidunt rem maiores, nobis quod hic quidem
+                    deserunt possimus tempore sapiente voluptatibus, et modi reprehenderit deleniti officia. Nulla molestiae,
+                    assumenda deleniti necessitatibus asperiores. Ratione, ducimus! Harum, dolores similique. Eligendi modi
+                    possimus magnam accusantium quas, vitae ut sunt earum neque adipisci ducimus, esse nisi qui asperiores
+                    velit quae voluptatum sit, omnis fuga tempore! Inventore maiores reprehenderit aperiam quaerat incidunt
+                    odio enim iure perspiciatis libero non, minus ullam ipsa, molestiae voluptatum iusto, voluptatibus reiciendis
+                    voluptates earum sit ducimus dolore odit. Nulla libero obcaecati placeat expedita debitis eos, suscipit
+                    nam voluptatibus rem iusto quas amet velit temporibus eius esse officia, sed doloremque ullam doloribus
+                    eaque, dolore cum veniam. Consequatur debitis sit est, sint beatae unde sequi esse libero! Esse consectetur
+                    quidem, eum. Sunt aut voluptatem, distinctio quisquam vel quasi! Illum, deleniti, alias! Culpa necessitatibus
+                    tenetur iste aliquid, ea adipisci, nulla ab in odit eum. Animi magnam sequi nostrum commodi, pariatur
+                    accusamus distinctio a illum laudantium corporis molestiae repellat, facere tempora provident aut optio
+                    cumque, eligendi nisi quia neque placeat sapiente libero officia. Animi unde beatae repellendus molestias,
+                    voluptatem, consectetur dolorem quisquam assumenda ab laudantium officia officiis dolore veritatis ea
+                    corporis quis deserunt est non ipsa sunt. Architecto sed amet inventore, neque est dicta rem excepturi.
+                    Eaque non soluta omnis aspernatur blanditiis accusantium aperiam, optio, corrupti quisquam ipsa reiciendis
+                    rerum esse ipsam facilis adipisci, pariatur, rem veritatis dolor repellat quos dolorem provident fugit!
+                    Doloremque unde neque aliquid, iure deleniti harum, eum nisi quibusdam id reprehenderit officia impedit
+                    tempore, recusandae voluptatibus? Earum eligendi animi est deleniti iure magnam rem facilis quas! Suscipit,
+                    hic, dolores? Ex placeat doloremque, dolor consequuntur sint, voluptatibus quis tempore vitae accusantium,
+                    vel delectus at illum quia repellat ratione, quaerat expedita harum. Quasi architecto, veniam fuga minima
+                    quis blanditiis nemo doloremque repudiandae eum iure consectetur nostrum voluptatem deserunt. Eos minima
+                    sed assumenda maxime optio modi officia culpa, quibusdam rerum nobis! Iste dignissimos, facere, tenetur
+                    officiis maiores, omnis optio nisi ratione cupiditate at incidunt eligendi aliquam laboriosam distinctio
+                    delectus ab blanditiis eveniet id quam explicabo dolores voluptatibus? Quam deleniti ratione tempora,
+                    nobis nostrum, earum, ad dolores cum consequatur, sed praesentium iste sunt. Optio ut delectus blanditiis
+                    vero excepturi illo provident harum voluptatibus in itaque quia, sapiente eligendi ipsum unde rerum aliquid
+                    accusantium, dolorum cum praesentium. Nesciunt quas inventore minima, esse consectetur maxime, nemo corrupti
+                    ratione veritatis odio dolor similique aliquam officiis ducimus, alias ea neque provident. Delectus nihil
+                    exercitationem consequatur in, voluptates, porro debitis consequuntur autem, doloremque nisi excepturi
+                    eaque. Quod reiciendis temporibus nesciunt alias blanditiis consectetur, doloribus, veritatis sed dolorem
+                    aliquam in corporis. Numquam excepturi beatae dolorum reprehenderit dolor aliquam, assumenda illum veniam
+                    dicta blanditiis similique aspernatur, ad facere quo esse libero pariatur, ratione nam suscipit inventore.
+                    Labore, fugiat quasi. Minima expedita corporis nulla suscipit, eligendi iusto, itaque aliquam labore
+                    incidunt, iure vero veritatis. Error ut, officia harum repellendus suscipit consequatur, distinctio corrupti
+                    non voluptatibus accusamus quisquam.</p>
+            </div>
+        </div>
+    </div>
 
     <script src="js/jquery.js"></script>
     <script src="js/scroll/smooth-scroll.min.js"></script>
@@ -200,7 +303,7 @@
     <script src="js/validation/jquery.validationEngine-es.js"></script>
     <script src="js/validation/jquery.validationEngine.js"></script>
     <script>
-        $(()=>{
+        $(() => {
             $("#form__validation").validationEngine();
         })
     </script>

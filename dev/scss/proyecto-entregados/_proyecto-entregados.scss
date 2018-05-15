@@ -56,11 +56,12 @@
     flex-wrap: wrap;
     text-align: center;
     margin-top: 30px;
-    justify-content: center;
+    justify-content: flex-start;
     &__item{
       width: 290px;
       padding: 0px 5px;
       box-sizing: border-box;
+      margin: 10px 0;
       &__name{
         font-family: $NovaBold;
         font-size: 19px;
