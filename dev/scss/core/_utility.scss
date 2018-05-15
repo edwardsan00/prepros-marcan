@@ -43,4 +43,8 @@
 }
 .btn-extra{
   cursor: pointer;
+  background-color: $yellow;
+  &:hover{
+    background-color: lighten($yellow, 8);
+  }
 }
