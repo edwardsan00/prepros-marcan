@@ -8,6 +8,24 @@ header{
 .header{
     display: flex;
     justify-content: space-between;
+    &__cotiza{
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+        // justify-content: center;
+        align-items: center;
+        &__phone{
+            margin-right: 20px;
+            a{
+                color: $gray;
+            }
+        }
+        .btn-gray{
+            background-color: $gray;
+            width: 132px;
+            height: 100%;
+        }
+    }
     &__logo{
         width: 150px;
         height: 70px;
@@ -117,5 +135,39 @@ header{
                 color: rgba($gray, .8);
             }
         }
+    }
+}
+
+.header-proyecto{
+    &__detalle{
+        background-color: #fff;
+        height: 70px;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        .header__item{
+            background-color: #fff;
+            @include desde(sm){
+                width: auto;
+                height: 70px;
+                border: 0;
+                &:hover{
+                    background-color: none;
+                    border-bottom: solid 2px $gray;
+                    box-sizing: border-box;
+                }
+                
+            }
+            @include desde(lg){
+                min-width: 120px;
+                &:nth-last-child(1){
+                    width: 166px;
+                    margin-left: 60px;
+                }
+            }
+        }
+    }
+    header{
+        top: 70px;
     }
 }
